@@ -1,0 +1,960 @@
+<html>
+    <head>
+        <meta name="viewport" content="width-device-width, intial-scale=1.0">
+        <link rel="stylesheet" href="style1.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="57x57" href="Favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="Favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="Favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="Favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="Favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="Favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="Favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="Favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="Favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="48x48" href="Favicon/favicon-48x48.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="Favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+        <link rel="manifest" href="Favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <title>AFFIXPP | ECE-Subjects</title>
+    </head>
+    <body id="bodybg"oncontextmenu="return false;">
+            <div class="navbar">
+                <img src="affixpplogo.png" class="logo">
+                <form action="affixecebranch.html" class="search-bar">
+                  <input type="text" id="searchInput" onkeyup="searchCourses()" name="q" placeholder="Search">
+                  <button type="submit"><img src="search.png"></button>
+                </form>
+                <nav>
+                    <input type="checkbox" id="click">
+                    <label for="click" class="menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    <ul>
+                        <li><a href="affixbranches">HOME</a></li>
+                        <li><a href="about">ABOUT</a></li>
+                        <li><a href="">E-LEARNING</a></li>
+                        <li>
+                          <div class="profile-dropdown">
+                          <div onclick="toggle()" class="profile-dropdown-btn">
+                          <span>PROFILE</span>
+                          </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                  <ul class="profile-dropdown-list">
+                    <li class="profile-dropdown-list-item">
+                      <div class="profile-dropdown-list-item-head">
+                        <img class="profile-img" src="">
+                        <h5 id="name"></h5>
+                      </div>
+                    </li>
+                    <hr />
+                    <li class="profile-dropdown-list-item">
+                      <button class="attendence-btn">Attendence</button>
+                      <button class="logout-btn" onclick="logout()">LOGOUT</button>
+                    </li>
+                </ul>
+          </div>
+          <div class="search-box">
+            <form action="affixecebranch.html" class="search-bar-small">
+              <input type="text" id="searchInput" onkeyup="searchCourses()" name="q" placeholder="Search">
+              <button type="submit"><img src="search.png"></button>
+          </form>
+          </div>
+  <div class="container">
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Advanced Embedded Systems</h2></br>
+        <p id="card">by Prabhakar</p>
+        <a href="applied.html">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Advanced Micro Controllers</h2></br>
+        <p id="card">by ************</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Advanced VLSI</h2>
+        <p id="card">Card Description</p></br>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Analog & Digital IC Applications</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Analog and Digital Communications</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Analog Electronic Circuits</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Antennas and Wave Propagation</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Applied Chemistry</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Applied Physics</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Artificial Neural Networks</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Basic Electronic Devices and Circuits</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Basics of PLDs and Memories</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Bio-Medical Signal Processing</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Bio-Medical Instrumentation</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Bio-Medical Electronics</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Calculus</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Cellular and Mobile Communications</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Coding Techniques</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Cognitive Radio</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Computer Architecture & Organization</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Computer Networks</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Constitutional Labour Laws</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Control Systems Engineering</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Data Communications</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Digital Electronics</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Digital Image Processing</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Digital Logic Families</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Digital Signal Processing</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Electrical & Mechanical Technology</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Electromagnetic Waves and Transmission Lines</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Electronic Devices and Circuits</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Electronic Measurements and Instrumentation</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Embedded Systems</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>EMI/EMC</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Engineering Drawing</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>English for Communication</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Fiber Optic Communications</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Fundamentals of Analog and Digital Communications</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Fundamentals of Digital Signal Processing</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>GPS & Navigational Aids</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Industrial Electronics</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Industrial Engineering and Management</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Information Theory and Coding</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Intoduction to Digital Image Processing</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Introduction to Cellular and Mobile Communications</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Introduction to Embedded Systems</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Introduction to Signals and Systems</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Introduction to VLSI Design</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>IoT and it’s Applications</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Linear Algebra & Vector Calculus</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Linear and Digital IC Applications</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Linear and Digital ICs</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Management and Organizational Behaviour</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Management Science</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Managerial Economics and Financial Accountancy</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Material Science</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Micro Processors and Micro Controllers</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Microelectronic Devices and Circuits</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Microwave Engineering</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Multi Carrier Communication Systems</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Nano Electronics</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Network Analysis</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Numerical & Transform Techniques</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>OOP through Java</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>PLDs and Memories</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Probability Theory and Stochastic Processes</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Programming and Problem Solving Using C</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Radar Engineering</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>RF and Mixed Signal Circuits</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Satellite Communications</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Satellite Communications: Principles & Applications</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Scientific Computing</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Semiconductor Diodes and Applications</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Signal Processing</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Signals & Systems</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Speech and Audio Signal Processing</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Switching Theory & Logic Design</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Telemetry Systems</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>VLSI Design</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Wireless Sensor Networks</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+<script src="script.js"></script>
+<script src="script2.js"></script>
+</html>

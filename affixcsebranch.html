@@ -1,0 +1,510 @@
+<html>
+    <head>
+        <meta name="viewport" content="width-device-width, intial-scale=1.0">
+        <link rel="stylesheet" href="style1.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="57x57" href="Favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="Favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="Favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="Favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="Favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="Favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="Favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="Favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="Favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="48x48" href="Favicon/favicon-48x48.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="Favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+        <link rel="manifest" href="Favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <title>AFFIXPP | CSE-Subjects</title>
+    </head>
+    <body id="bodybg" oncontextmenu="return false;">
+            <div class="navbar">
+                <img src="affixpplogo.png" class="logo">
+                <form action="affixcsebranch.html" class="search-bar">
+                  <input type="text" id="searchInput" onkeyup="searchCourses()" name="q" placeholder="Search">
+                  <button type="submit"><img src="search.png"></button>
+                </form>
+                <nav>
+                    <input type="checkbox" id="click">
+                    <label for="click" class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                    </label>
+                    <ul>
+                        <li><a href="affixbranches">HOME</a></li>
+                        <li><a href="about">ABOUT</a></li>
+                        <li><a href="">E-LEARNING</a></li>
+                        <li>
+                          <div class="profile-dropdown">
+                          <div onclick="toggle()" class="profile-dropdown-btn">
+                          <span>PROFILE</span>
+                          </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                  <ul class="profile-dropdown-list">
+                    <li class="profile-dropdown-list-item">
+                      <div class="profile-dropdown-list-item-head">
+                        <img class="profile-img" src="">
+                        <h5 id="name"></h5>
+                      </div>
+                    </li>
+                    <hr />
+                    <li class="profile-dropdown-list-item">
+                      <button class="attendence-btn">Attendence</button>
+                      <button class="logout-btn" onclick="logout()">LOGOUT</button>
+                    </li>
+                </ul>
+          </div>
+          <div class="search-box">
+            <form action="affixcsebranch.html" class="search-bar-small">
+              <input type="text" id="searchInput" onkeyup="searchCourses()" name="q" placeholder="Search">
+              <button type="submit"><img src="search.png"></button>
+          </form>
+          </div>
+  <div class="container">
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Applied Chemistry</h2></br>
+        <p id="card">by Prabhakar</p>
+        <a href="materials">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Applied Physics</h2></br>
+        <p id="card">by ************</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Artificial Intelligence</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Calculus</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Cloud Computing</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Compiler Design</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Computer Engineering Workshop</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Computer Networks</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Computer Organization</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Cryptography and Network Security</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Data Analytics </h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Data Structures</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Data Visualization</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Data Warehousing and Mining</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Data Wrangling</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Database Management Systems</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Design Analysis of Algorithms</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Digital Forensics</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Digital Logic Design</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Discrete Structures</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>English for Communication</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>FOSS</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Internet Of Things</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Introduction to Cyber Security</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Linear Algebra and Vector Calculus</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Machine Learning</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Malware Analysis</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>MEFA</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Mobile Computing</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Numerical Techniques and Vector Spaces</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Object Oriented Programming through C++</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>OOPS Through Java</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Operating Systems</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Probabilty and Statistics</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Programming and Problem Solving Using C</h2>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Software Engineering</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Theory of Computation</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Web Services</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="card bg.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <h2>Web Technologies</h2></br>
+        <p id="card">Card Description</p>
+        <a href="#">Materials</a>
+      </div>
+    </div>
+    
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+<script src="script.js"></script>
+<script src="script2.js"></script>
+</html>

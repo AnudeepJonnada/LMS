@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Chart</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+<body>
+  <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+  <script>
+    // Load the CSV file
+    fetch('attendence.csv')
+      .then(response => response.text())
+      .then(data => {
+        const labels = [];
+        const values = [];
+
+        // Parse the CSV data
+        data.split('\n').forEach(line => {
+          const parts = line.split(',');
+          labels.push(parts[0]);
+          values.push(parseFloat(parts[1]));
+        });
+
+        // Create the chart
+        new Chart("myChart", {
+          type: "line",
+          data: {
+            labels: labels,
+            datasets: [{
+              fill: false,
+              lineTension: 0,
+              backgroundColor: "rgba(255,69,0,1.0)",
+              borderColor: "rgba(255,69,0,0.1)",
+              data: values
+            }]
+          },
+          options: {
+            legend: {display: false},
+            scales: {
+              yAxes: [{ticks: {min: 0, max: 100}}],
+            }
+          }
+        });
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+        <meta name="viewport" content="width-device-width, intial-scale=1.0">
+        <link rel="stylesheet" href="style1.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+        <link href="https://fonts.googleapis.com/css2?family=roboto:wght@400;700&display=swap" rel="stylesheet">
+        <!-- Boxicons CDN Link -->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="apple-touch-icon" sizes="57x57" href="Favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="Favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="Favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="Favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="Favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="Favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="Favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="Favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="Favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="48x48" href="Favicon/favicon-48x48.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="Favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+        <link rel="manifest" href="Favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <title>AFFIXPP | Materials</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="sidenav.css">
+   </head>
+<body id="bodybg" oncontextmenu="return false;">
+  <div class="sidebar">
+    <div class="logo-details">
+        <div class="logo_name"><img src="affixpplogo.png"></div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+       <button href="#">
+         <i class='bx bx-label' ></i>
+         <span class="links_name">Syllabus</span>
+       </button>
+       <span class="tooltip">Syllabus</span>
+     </li>
+      <li>
+        <button onclick="loadcivilPage()">
+            <i class='bx bx-label' ></i>
+          <span class="links_name">Material</span>
+        </button>
+         <span class="tooltip">Material</span>
+      </li>
+      <li>
+       <button href="#">
+        <i class='bx bx-label' ></i>
+         <span class="links_name">Question Bank</span>
+       </button>
+       <span class="tooltip">Question Bank</span>
+     </li>
+     <li>
+       <button href="#">
+        <i class='bx bx-label' ></i>
+         <span class="links_name">Previous Papers</span>
+       </button>
+       <span class="tooltip">Previous Papers</span>
+     </li>
+     <li>
+        <button href="#">
+            <i class='bx bx-label' ></i>
+          <span class="links_name">MCQ</span>
+        </button>
+         <span class="tooltip">MCQ</span>
+      </li>
+     <li>
+       <button href="#">
+        <i class='bx bx-label' ></i>
+         <span class="links_name">Lab Manual</span>
+       </button>
+       <span class="tooltip">Lab Manual</span>
+     </li>
+     <li class="profile">
+      <div class="profile-details">
+        <img class="profile-img" src="">
+        <div class="name_redg">
+             <h5 id="name"></h5>
+             <h5 id="redg"></h5>
+        </div>
+      </div>  
+        <a href="affixbranches"><i class='bx bxs-home' id="back"></i></a>
+        <span class="tooltip">Back</span>
+     </li>
+    </ul>
+  </div>
+  <section class="home-section">
+      <iframe id="content-m" src="bg-m.html" style="width: 100%; height: 100vh; border: none;" sandbox="allow-scripts allow-same-origin"></iframe>
+  </section>
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
+
+  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+    sidebar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+  });
+
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+  
+  function loadhomePage(){
+    document.getElementById("back").src = "home.html";
+  }
+
+  function loadcivilPage() {
+        document.getElementById("content-m").src = "https://drive.google.com/file/d/1xYDtHfmOC8tFIc4hMaAjDoMkAqk1GUvy/preview";
+      }
+
+  </script>
+ <script src="script.js"></script>
+<script src="script1.js"></script>
+<script src="script2.js"></script>
+</body>
+</html>
